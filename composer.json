@@ -1,0 +1,32 @@
+{
+    "name": "liumenggit/generate-key",
+    "alias": "密钥生成器",
+    "description": "表单密钥生成组件",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/liumenggit/dcat-generate-key",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rrsyycm",
+            "email": "rrsyycm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liumenggit\\GenerateKey\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Liumenggit\\GenerateKey\\GenerateKeyServiceProvider",
+        "laravel": {
+            "providers": [
+                "Liumenggit\\GenerateKey\\GenerateKeyServiceProvider"
+            ]
+        }
+    }
+}
